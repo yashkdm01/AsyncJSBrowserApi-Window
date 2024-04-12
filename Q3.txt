@@ -1,0 +1,21 @@
+Q3.
+Ans---
+The same-origin policy is a security feature implemented by web browsers to prevent malicious scripts from accessing data across different origins (domains). It restricts AJAX requests and other types of communication such as XMLHttpRequest, Fetch API, and WebSockets to be made only to the same origin from which the script was loaded.
+
+In simpler terms, it means that a web page served from one origin (domain, protocol, and port) is restricted from making AJAX requests to another origin.
+
+For example, consider a web page served from https://example.com. The same-origin policy would prevent JavaScript code running on this page from making AJAX requests to https://anotherdomain.com or http://example.com:8080.
+
+However, there are some ways to work around the same-origin policy:
+
+1.Cross-Origin Resource Sharing (CORS): CORS is a mechanism that allows servers to specify who can access their resources. By enabling CORS on the server, it can explicitly allow certain origins to make requests to its resources. This is done by including specific HTTP headers in the response, such as Access-Control-Allow-Origin, Access-Control-Allow-Methods, etc.
+
+2.JSONP (JSON with Padding): JSONP is a workaround for making cross-domain AJAX requests by exploiting the fact that <script> tags are not subject to the same-origin policy. It works by injecting a <script> tag into the DOM with a source URL pointing to a server that returns JSON data wrapped in a function call. This allows the data to be retrieved by the client-side script.
+
+3.Proxy Server: You can set up a server-side proxy to forward AJAX requests from your domain to the desired destination domain. The browser sees the request as coming from the same origin as the web page, bypassing the same-origin policy. This approach requires server-side coding but can be effective for certain scenarios.
+
+4.CORS Anywhere: CORS Anywhere is a proxy server that adds CORS headers to the proxied request, allowing cross-origin requests to be made directly from the browser. It acts as a middleware between the client and the destination server, appending the necessary CORS headers to the response.
+
+5.Server-Side Solutions: If you have control over the server, you can implement server-side logic to enable cross-origin requests. This could involve configuring your server to include the appropriate CORS headers or implementing a different authentication mechanism that doesn't rely on cookies.
+
+These workarounds should be used judiciously and with consideration for security implications, as bypassing the same-origin policy can expose your application to potential security risks.

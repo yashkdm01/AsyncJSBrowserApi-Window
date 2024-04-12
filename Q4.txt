@@ -1,0 +1,38 @@
+Q4.
+Ans---
+Callbacks and Promises are both mechanisms used in JavaScript for managing asynchronous code execution, but they differ in how they handle asynchronous operations and how they handle errors.
+
+Callbacks:
+Callbacks are functions that are passed as arguments to other functions and are executed once the asynchronous operation is completed. They have been traditionally used in JavaScript to handle asynchronous tasks.
+
+Promises:
+Promises provide a more structured way to handle asynchronous operations. A Promise represents a value that may be available now, or in the future, or never. It has three states: pending, fulfilled, or rejected.
+
+Comparison:
+
+1.Readability and Maintainability:
+
+Promises offer a more readable and maintainable way to write asynchronous code compared to deeply nested callbacks, known as "callback hell." The chaining of .then() and .catch() allows for more linear and sequential code structure.
+Error Handling:
+
+Callbacks often require error handling to be passed as separate callback functions, leading to complex and error-prone code. Promises provide a built-in mechanism for error handling through the .catch() method, making it easier to manage errors.
+Composition:
+
+Promises support chaining of multiple asynchronous operations, allowing for better composition and sequential execution of tasks. This is achieved using the .then() method, where each .then() returns a new Promise.
+State Management:
+
+Promises have clear states (pending, fulfilled, rejected), making it easier to track the status of asynchronous operations. This allows for better error handling and debugging.
+Asynchronous Flow Control:
+
+Promises inherently support asynchronous flow control, allowing for better control over the execution of asynchronous tasks, such as parallel, sequential, or concurrent execution.
+Why Promises are Preferred:
+
+2.Clarity and Readability: Promises provide a cleaner and more readable syntax, reducing the likelihood of callback hell and making code easier to understand and maintain.
+Error Handling: Promises offer built-in error handling through the .catch() method, making error management more straightforward and less error-prone.
+
+3.Composition: Promises support method chaining, enabling better composition of asynchronous operations, leading to more modular and reusable code.
+
+4.State Management: Promises have clear states, making it easier to manage asynchronous tasks and track their status, leading to better error handling and debugging.
+
+5.Asynchronous Flow Control: Promises offer more control over the flow of asynchronous tasks, allowing for better management of concurrency, parallelism, and sequential execution.
+Standardization: Promises are part of the ECMAScript 6 (ES6) standard, making them widely adopted and supported across modern JavaScript environments. They also serve as the foundation for more advanced asynchronous patterns like async/await.

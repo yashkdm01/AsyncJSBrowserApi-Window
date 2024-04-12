@@ -1,0 +1,11 @@
+Q6.
+Ans---
+Both localStorage and sessionStorage are part of the Web Storage API, which allows web applications to store data locally within the user's browser. They provide a way to persistently or temporarily store key-value pairs of data, which can be accessed and manipulated by JavaScript code running in the browser.
+
+1.LocalStorage:
+Purpose: localStorage is designed for storing data persistently across browser sessions. The data stored in localStorage remains available even after the browser is closed and reopened, providing a way to store user preferences, settings, or other application data that should persist over time.
+Usage: To store data in localStorage, you use the setItem() method, specifying a key-value pair. To retrieve the stored data, you use the getItem() method, passing the key. You can also remove items using the removeItem() method or clear all stored data using the clear() method.
+
+2.SessionStorage:
+Purpose: sessionStorage is designed for storing data temporarily for the duration of a single browser session. The data stored in sessionStorage is cleared when the browser tab or window is closed, providing a way to store transient data that should be available only during the current session.
+Usage: The usage of sessionStorage is similar to localStorage. You use the same methods (setItem(), getItem(), removeItem(), clear()) to manipulate data stored in sessionStorage.

@@ -1,0 +1,31 @@
+Q5. 
+Ans---
+Here are some common Browser APIs available to JavaScript developers:
+
+1.DOM (Document Object Model) API:
+
+The DOM API provides a structured representation of HTML documents and allows JavaScript to interact with the elements within the document. It offers methods and properties to manipulate the structure, content, and styling of HTML elements dynamically.
+Event API:
+
+2.The Event API allows JavaScript to handle events triggered by user interactions (such as clicks, keypresses, mouse movements) or by the browser itself (such as page load, resize, scroll). It provides event listeners and handlers to respond to these events and perform appropriate actions.
+XHR (XMLHttpRequest) API:
+
+3.The XHR API enables JavaScript to make HTTP requests to fetch data from a server without reloading the entire page. It supports various HTTP methods (GET, POST, PUT, DELETE) and allows asynchronous communication with servers, typically used in AJAX (Asynchronous JavaScript and XML) requests.
+Fetch API:
+
+4.The Fetch API provides a modern, more flexible alternative to the XHR API for making HTTP requests. It offers a simpler and more powerful interface for fetching resources asynchronously across the network. It returns Promises, making it easier to work with asynchronous operations and handle responses.
+Storage API:
+
+5.The Storage API allows JavaScript to store data locally on the user's browser. It includes two main mechanisms: Web Storage (localStorage and sessionStorage) and IndexedDB. Web Storage provides key-value pairs for storing simple data persistently or session-based, while IndexedDB is a more powerful database-like storage solution for complex data.
+Canvas API:
+
+6.The Canvas API enables dynamic, scriptable rendering of 2D graphics, primarily used for drawing shapes, images, and text directly on a web page using JavaScript. It provides a wide range of drawing methods and properties to manipulate and animate graphics.
+Web Workers API:
+
+7.processing and improved performance for CPU-intensive tasks. Web Workers can perform tasks such as data processing, calculations, or other operations without blocking the user interface.
+Geolocation API:
+
+8.The Geolocation API provides JavaScript with access to the user's geographical location, allowing web applications to retrieve the device's latitude and longitude coordinates. It enables location-aware functionality in web apps, such as mapping, location-based services, and geotagging.
+WebRTC (Web Real-Time Communication) API:
+
+9.The WebRTC API enables real-time communication between web browsers or applications, allowing peer-to-peer audio, video, and data streaming without requiring plugins or additional software. It facilitates features such as video conferencing, voice calling, file sharing, and multiplayer gaming directly within web browsers.

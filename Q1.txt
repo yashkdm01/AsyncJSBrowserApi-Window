@@ -1,0 +1,13 @@
+Q1.
+Ans---
+The XMLHttpRequest object is a built-in JavaScript object that provides an easy way to fetch data from a URL without having to reload the entire web page. It is commonly used to perform AJAX (Asynchronous JavaScript and XML) requests.
+Here are steps to create it --
+1.Creating an instance: To use XMLHttpRequest, you first create an instance of it using the new keyword.
+2.Opening a connection: After creating the XMLHttpRequest object, you need to specify the details of the request, such as the HTTP method (GET, POST, etc.) and the URL of the resource you want to fetch:
+The parameters of the open method are:
+The HTTP method (GET, POST, etc.).
+The URL of the resource.
+An optional boolean parameter indicating whether the request should be asynchronous (true) or synchronous (false). Asynchronous requests are more common in modern web development.
+3.Setting up event handlers: You can define functions to handle various events associated with the XMLHttpRequest object, such as load, error, abort, etc. These event handlers allow you to respond to different stages of the request process.
+4.Sending the request: Once the request is configured, you send it using the send method.
+5.Handling the response: After the server responds to the request, the XMLHttpRequest object stores the response data. You can access this data through properties like responseText, responseXML, response, etc., depending on the type of response expected (text, XML, JSON, etc.).
